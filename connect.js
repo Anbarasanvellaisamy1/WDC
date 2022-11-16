@@ -37,7 +37,7 @@
             var  tableData = [];
           console.log(data)
             // Iterate over the JSON object
-            for (var i = 0; i < data.length; i++) {
+            //for (var i = 0; i < data.length; i++) {
                 tableData.push({
                     "poster_path":data[i]["poster_path"],  // metti in data la response al campo "data" --> put the response in data field
                     "popularity":data[i]["popularity"],
@@ -52,7 +52,7 @@
                     "name":data[i]["name"],
                     "original_name":data[i]["original_name"],
                 });
-            }
+            //}
    console.log(tableData)
             table.appendRows(tableData);
             doneCallback();
